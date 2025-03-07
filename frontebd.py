@@ -1,5 +1,14 @@
 from customtkinter import *
-#from tkinter import messagebox
+from tkinter import messagebox
+
+
+def loginn():
+    root.destroy()
+    win=CTk()
+    app=login(win)
+    win.mainloop()
+
+
 
 class login:
     def __init__(self,win):
@@ -38,11 +47,11 @@ class login:
 
 
         self.btn_add=CTkButton(win,text="تایید",width=200,
-                            font=("B nazanin",16))
+                            font=("B nazanin",16),)
         self.btn_add.place(x=360,y=120)
 
         self.btn_cleer=CTkButton(win,text="بازنشانی",width=200,
-                            font=("B nazanin",16))
+                            font=("B nazanin",16),)
         self.btn_cleer.place(x=100,y=120)
 
         self.btn_v=CTkButton(win,text="ورود",width=200,
@@ -52,20 +61,6 @@ class login:
         self.btn_gh=CTkButton(win,text="خروج",width=200,
                             font=("B nazanin",16))
         self.btn_gh.place(x=100,y=160)
-
-def loginn():
-    root.destroy()
-    win=CTk()
-    app=login(win)
-    win.mainloop()
-    
-    
-    win.mainloop()
-
-
-
-
-
 
 
 root=CTk()
@@ -97,5 +92,6 @@ btn_v.place(x=160,y=130)
 
 root.resizable(0,0)
 root.mainloop()
+
 
 
