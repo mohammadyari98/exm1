@@ -8,7 +8,6 @@ class login:
         self.win.geometry("650x300+550+250")
         self.win.resizable(0,0)
 
-                    font=("B Esfehan",20))
         self.lbl_name=CTkLabel(win,text=":نـــــــــــــــــــــام",
                         font=("B Esfehan",20))
         self.lbl_name.place(x=500,y=20)
