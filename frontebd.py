@@ -9,7 +9,6 @@ def loginn():
     win.mainloop()
 
 
-
 class login:
     def __init__(self,win):
         self.win=win
@@ -59,9 +58,13 @@ class login:
         self.btn_v.place(x=360,y=160)
 
         self.btn_gh=CTkButton(win,text="خروج",width=200,
-                            font=("B nazanin",16))
+                            font=("B nazanin",16),command=exit)
         self.btn_gh.place(x=100,y=160)
-
+        
+    def exit():
+        c=messagebox.askyesno("خروج","آیا مطمئن هستید؟")
+        if c == True:
+            self.win.destroy()
 
 root=CTk()
 root.title("خوش برگشتید")
