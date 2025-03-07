@@ -1,7 +1,6 @@
 from customtkinter import *
 
 
-
 def lohinn():
     root.destroy()
     win=CTk()
